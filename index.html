@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>FootballVerse</title>
+    <title>Zaptest</title>
     <style>
         html {
             box-sizing: border-box;
@@ -136,14 +136,14 @@
         var db = indexedDB.open("dummy_indexdb", 1); // iOS 14.6 fix; the call to open indexdb hangs forever otherwise
 
         const buildUrl = "Build";
-        const loaderUrl = buildUrl + "/ARTest.loader.js";
+        const loaderUrl = buildUrl + "/test_model.loader.js";
         const config = {
-            dataUrl: buildUrl + "/ARTest.data",
-            frameworkUrl: buildUrl + "/ARTest.framework.js",
-            codeUrl: buildUrl + "/ARTest.wasm",
+            dataUrl: buildUrl + "/test_model.data",
+            frameworkUrl: buildUrl + "/test_model.framework.js",
+            codeUrl: buildUrl + "/test_model.wasm",
         streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
-            productName: "FootballVerse",
+            productName: "Zaptest",
             productVersion: "0.1",
         };
 
