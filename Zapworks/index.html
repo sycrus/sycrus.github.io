@@ -169,7 +169,7 @@
         //script.onload = () => { CreateUnityLoader();   };
         document.body.appendChild(script);
 
-        ZAPPAR_PERMISSIONS_IMPLEMENTATION
+        window.zappar.permission_request_ui_promise().then(WaitForZCVLoad);
 
         function WaitForZCVLoad() {
             if (zappar.loaded()) {
